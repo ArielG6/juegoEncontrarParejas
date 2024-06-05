@@ -64,25 +64,30 @@
       <div><p id="final">Selecciona parejas</p></div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script>
-        const parejas = [];
-        parejas[0] = 20;
-        parejas[1] = 2;
-        parejas[2] = 14;
-        parejas[3] = 1;
-        parejas[4] = 1;
-        parejas[5] = 20;
-        parejas[6] = 14;
-        parejas[7] = 2;
+        const parejas = [1,2,3,4,1,2,3,4];
+        
+        for (let i = parejas.length -1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i+1));
+          let k = parejas[i];
+          parejas[i] = parejas[j];
+          parejas[j] = k;
+        }
 
         let listado = parejas.length;
         let figurai = "";
         let figuraj = "";
         progreso = [];
 
+        function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
       $(document).ready(function(){
         $(".pos").click(function(){
           $(this).text(parejas[this.id]);
-          for (let i=0; i < listado-1; i++){
+          setTimeout(
+          () =>{
+            for (let i=0; i < listado-1; i++){
             figurai = "#" + i;
             if($(figurai).text() != "X" && !progreso.includes(figurai)){
               for (let j=i+1; j < listado; j++){
@@ -101,7 +106,9 @@
                 }
               }
             }   
-          }         
+          }    
+          }
+          ,500);
         });
       });
       
@@ -132,6 +139,14 @@ $(document).ready(function(){
         document.getElementById("final").innerHTML ="Ganaste";
         
         
+        parejas[0] = 20;
+        parejas[1] = 2;
+        parejas[2] = 14;
+        parejas[3] = 1;
+        parejas[4] = 1;
+        parejas[5] = 20;
+        parejas[6] = 14;
+        parejas[7] = 2;
 
         
 -->
