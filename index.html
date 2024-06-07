@@ -8,110 +8,277 @@
   </head>
   <body>
     <main>
-       <div class="container text-center">
+      
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button id="facil" class="btn btn-primary me-md-2" type="button">Fácil</button>
+        <button id="normal" class="btn btn-primary" type="button">Normal</button>
+        <button id="dificil" class="btn btn-primary" type="button">Difícil</button>
+      </div>
+      <div class="container text-center" id="tableroFacil" style="display: none;">
         <div class="row">
           <div class="col">
-                <div>
-                    <p id="0" class="pos">X</p>
-                </div>
-          </div>
-          <div class="col">
-                <div>
-                    <p id="1" class="pos">X</p>
-                </div>
-          </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <div>
-                    <p id="2" class="pos">X</p>
-                </div>
+            <div>
+              <p id="f0" class="pos">X</p>
             </div>
-            <div class="col">
-                <div>
-                    <p id="3" class="pos">X</p>
-                </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="f1" class="pos">X</p>
             </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-              <div>
-                  <p id="4" class="pos">X</p>
-              </div>
-          </div>
-          <div class="col">
-              <div>
-                  <p id="5" class="pos">X</p>
-              </div>
           </div>
         </div>
-
         <div class="row">
           <div class="col">
-              <div>
-                  <p id="6" class="pos">X</p>
-              </div>
+            <div>
+              <p id="f2" class="pos">X</p>
+            </div>
           </div>
           <div class="col">
-              <div>
-                  <p id="7" class="pos">X</p>
-              </div>
+            <div>
+              <p id="f3" class="pos">X</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center" id="tableroNormal" style="display: none;">
+        <div class="row">
+          <div class="col">
+            <div>
+              <p id="n0" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="n1" class="pos">X</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div>
+              <p id="n2" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="n3" class="pos">X</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div>
+              <p id="n4" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="n5" class="pos">X</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div>
+              <p id="n6" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="n7" class="pos">X</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center" id="tableroDificil" style="display: none;">
+        <div class="row">
+          <div class="col">
+            <div>
+              <p id="d0" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d1" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d2" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d3" class="pos">X</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div>
+              <p id="d4" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d5" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d6" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d7" class="pos">X</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div>
+              <p id="d8" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d9" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d10" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d11" class="pos">X</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div>
+              <p id="d12" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d13" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d14" class="pos">X</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p id="d15" class="pos">X</p>
+            </div>
           </div>
         </div>
       </div>
       <div><p id="final">Selecciona parejas</p></div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script>
-        const parejas = [1,2,3,4,1,2,3,4];
-        
-        for (let i = parejas.length -1; i > 0; i--) {
-          let j = Math.floor(Math.random() * (i+1));
-          let k = parejas[i];
-          parejas[i] = parejas[j];
-          parejas[j] = k;
+      <script>      
+        //Delay para poder ver las parejas cuando no coinciden
+        function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
         }
-
-        let listado = parejas.length;
+        //Variables globales
+        let parejas = [];
         let figurai = "";
         let figuraj = "";
-        progreso = [];
-
-        function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-      $(document).ready(function(){
-        $(".pos").click(function(){
-          $(this).text(parejas[this.id]);
-          setTimeout(
-          () =>{
-            for (let i=0; i < listado-1; i++){
-            figurai = "#" + i;
-            if($(figurai).text() != "X" && !progreso.includes(figurai)){
-              for (let j=i+1; j < listado; j++){
-                figuraj = "#" + j;
-                if($(figuraj).text() != "X" && !progreso.includes(figuraj)){
-                  if ($(figurai).text() == $(figuraj).text()){
-                  progreso.push(figurai);
-                  progreso.push(figuraj);
-                  if (progreso.length == parejas.length){
-                    $("#final").text("Ganaste!");
+        let progreso = [];
+        let dificultad = "";
+        //Lógica de juego
+        $(document).ready(function(){
+          //Generación de jugadas
+          $("#facil").click(function(){
+            dificultad = "f";
+            parejas = [1,2,1,2];  
+            for (let i = parejas.length -1; i > 0; i--) {
+              let j = Math.floor(Math.random() * (i+1));
+              let k = parejas[i];
+              parejas[i] = parejas[j];
+              parejas[j] = k;
+              figurai = "#" + dificultad + i;
+              $(figurai).text("X");
+            }
+            $("#f0").text("X");   
+            $("#final").text("Selecciona parejas");   
+            $("#tableroFacil").show();
+            $("#tableroNormal").hide();
+            $("#tableroDificil").hide();
+            progreso = [];
+          });
+          $("#normal").click(function(){
+            dificultad = "n";
+            parejas = [1,2,3,4,1,2,3,4];  
+            for (let i = parejas.length -1; i > 0; i--) {
+              let j = Math.floor(Math.random() * (i+1));
+              let k = parejas[i];
+              parejas[i] = parejas[j];
+              parejas[j] = k;
+              figurai = "#" + dificultad + i;
+              $(figurai).text("X");
+            }
+            $("#n0").text("X");   
+            $("#final").text("Selecciona parejas");   
+            $("#tableroFacil").hide();
+            $("#tableroNormal").show();
+            $("#tableroDificil").hide();
+            progreso = [];
+          });
+          $("#dificil").click(function(){
+            dificultad = "d";
+            parejas = [1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8];  
+            for (let i = parejas.length -1; i > 0; i--) {
+              let j = Math.floor(Math.random() * (i+1));
+              let k = parejas[i];
+              parejas[i] = parejas[j];
+              parejas[j] = k;
+              figurai = "#" + dificultad + i;
+              $(figurai).text("X");
+            }
+            $("#d0").text("X");   
+            $("#final").text("Selecciona parejas");   
+            $("#tableroFacil").hide();
+            $("#tableroNormal").hide();
+            $("#tableroDificil").show();
+            progreso = [];
+          });
+          $(".pos").click(function(){
+            let posicion = this.id;
+            $(this).text(parejas[posicion.slice(1,posicion.length)]);
+            setTimeout(
+            () =>{
+              for (let i=0; i < parejas.length-1; i++){
+              figurai = "#" + dificultad + i;
+              if($(figurai).text() != "X" && !progreso.includes(figurai)){
+                for (let j=i+1; j < parejas.length; j++){
+                  figuraj = "#" + dificultad + j;
+                  if($(figuraj).text() != "X" && !progreso.includes(figuraj)){
+                    if ($(figurai).text() == $(figuraj).text()){
+                    progreso.push(figurai);
+                    progreso.push(figuraj);
+                    if (progreso.length == parejas.length){
+                      $("#final").text("Ganaste!");
+                    }
+                  } else {
+                    $(figurai).text("X");
+                    $(figuraj).text("X");
                   }
-                } else {
-                  $(figurai).text("X");
-                  $(figuraj).text("X");
+                  }
                 }
-                }
-              }
-            }   
-          }    
-          }
-          ,500);
+              }   
+            }    
+            }
+            ,500);
+          });
         });
-      });
-      
       </script>
     </main>    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -148,5 +315,72 @@ $(document).ready(function(){
         parejas[6] = 14;
         parejas[7] = 2;
 
-        
+        const codigo = '<div class="row">'+
+          '<div class="col">'+
+                '<div>'+
+                    '<p id="0" class="pos">X</p>'+
+                '</div>'+
+          '</div>'+
+          '<div class="col">'+
+                '<div>'+
+                    '<p id="1" class="pos">X</p>'+
+                '</div>'+
+          '</div>'+
+        '</div>'+
+
+        <div class="row">'+
+            <div class="col">'+
+                <div>'+
+                    <p id="2" class="pos">X</p>'+
+                </div>'+
+            </div>
+            <div class="col">
+                <div>
+                    <p id="3" class="pos">X</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+              <div>
+                  <p id="4" class="pos">X</p>
+              </div>
+          </div>
+          <div class="col">
+              <div>
+                  <p id="5" class="pos">X</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+              <div>
+                  <p id="6" class="pos">X</p>
+              </div>
+          </div>
+          <div class="col">
+              <div>
+                  <p id="7" class="pos">X</p>
+              </div>
+          </div>
+        </div>';
+
+//Armado del tablero
+            let codigo = "";
+            let k = 0;
+        /*for (let i=1; i<=1; i++){
+              codigo = codigo + '<div class="row">';
+              for (let j=1; i<=1; j++){
+                codigo = codigo + 
+                  '<div class="col">'+
+                    '<div>'+
+                      '<p id="'+ k + '" class="pos">X</p>'+
+                    '</div>'+
+                  '</div>';
+                k++;
+              }
+              codigo = codigo + '</div>';
+            } */
 -->
