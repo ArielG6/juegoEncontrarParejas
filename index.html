@@ -38,9 +38,9 @@
           <h4 class="text-center" id="final">Selecciona una dificultad para iniciar el juego</h4>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-          <button id="facil" class="btn btn-primary me-md-2" type="button">Fácil</button>
-          <button id="normal" class="btn btn-primary" type="button">Normal</button>
-          <button id="dificil" class="btn btn-primary" type="button">Difícil</button>
+          <button id="facil" class="btn btn-primary me-md-2 color-botones" type="button">Fácil</button>
+          <button id="normal" class="btn btn-primary color-botones" type="button">Normal</button>
+          <button id="dificil" class="btn btn-primary color-botones" type="button">Difícil</button>
         </div>
         <div class="container text-center" id="tableroFacil" style="display: none;">
           <div class="row">
@@ -220,105 +220,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
   </body>
 </html>
-<!-- 
-<div>
-        <img src="Parejas/Oculto.jpg" id="00" class="pos border rounded-4" width="100">
-      </div>
-$(document).ready(function(){
-        $(".pos").click(function(){
-          $(this).text(parejas[this.id]);
-          finJuego[this.id]= 1;
-          fin = finJuego[0]+finJuego[1]+finJuego[2]+finJuego[3];
-        });
-
-    finJuego[this.id]= true;
-            for (let x in finJuego){
-                if (x == true){
-                    fin = true;
-                }
-            }
-        
-$(document).ready(function(){
-                $("#fin").text("Ganaste!");
-            });
-        document.getElementById("final").innerHTML ="Ganaste";
-        
-        
-        parejas[0] = 20;
-        parejas[1] = 2;
-        parejas[2] = 14;
-        parejas[3] = 1;
-        parejas[4] = 1;
-        parejas[5] = 20;
-        parejas[6] = 14;
-        parejas[7] = 2;
-
-        const codigo = '<div class="row">'+
-          '<div class="col">'+
-                '<div>'+
-                    '<p id="0" class="pos">X</p>'+
-                '</div>'+
-          '</div>'+
-          '<div class="col">'+
-                '<div>'+
-                    '<p id="1" class="pos">X</p>'+
-                '</div>'+
-          '</div>'+
-        '</div>'+
-
-        <div class="row">'+
-            <div class="col">'+
-                <div>'+
-                    <p id="2" class="pos">X</p>'+
-                </div>'+
-            </div>
-            <div class="col">
-                <div>
-                    <p id="3" class="pos">X</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-              <div>
-                  <p id="4" class="pos">X</p>
-              </div>
-          </div>
-          <div class="col">
-              <div>
-                  <p id="5" class="pos">X</p>
-              </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-              <div>
-                  <p id="6" class="pos">X</p>
-              </div>
-          </div>
-          <div class="col">
-              <div>
-                  <p id="7" class="pos">X</p>
-              </div>
-          </div>
-        </div>';
-
-//Armado del tablero
-            let codigo = "";
-            let k = 0;
-        /*for (let i=1; i<=1; i++){
-              codigo = codigo + '<div class="row">';
-              for (let j=1; i<=1; j++){
-                codigo = codigo + 
-                  '<div class="col">'+
-                    '<div>'+
-                      '<p id="'+ k + '" class="pos">X</p>'+
-                    '</div>'+
-                  '</div>';
-                k++;
-              }
-              codigo = codigo + '</div>';
-            } */
--->
